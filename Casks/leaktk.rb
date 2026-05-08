@@ -3,7 +3,7 @@ cask "leaktk" do
 
   on_macos do
     on_arm do
-      url "https://github.com/bplaxco/homebrew-tap/releases/download/2026-05-08-leaktk-test/leaktk-test-darwin-arm64.tar.xz",
+      url "https://github.com/bplaxco/homebrew-tap/releases/download/2026-05-08-leaktk-test/leaktk-test-darwin-arm64.tar.xz"
       sha256 "14042cb6ade73bd040c5542e2d935bfaac22bbef679b0e33baf55dbc5adc9beb"
     end
   end
