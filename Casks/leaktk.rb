@@ -17,4 +17,12 @@ cask "leaktk" do
   end
 
   binary "leaktk"
+
+
+  postflight do
+    if OS.mac?
+      system_command "/usr/bin/codesign", args: ["-f", "-s", "-", "#{staged_path}/leaktk"]
+      # system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/leaktk"]
+    end
+  end
 end
